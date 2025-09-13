@@ -939,13 +939,14 @@ section,
 
 .hero .welcome h2 {
   margin: 0;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 700;
 }
 
 .hero .welcome p {
   font-size: 24px;
   margin: 0;
+  color: black;
 }
 
 .hero .content {
@@ -1011,6 +1012,17 @@ section,
 .hero .content .icon-box p {
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .hero .welcome h2 {
+    font-size: 38px; /* smaller for mobile */
+  }
+
+  .hero .welcome p {
+    font-size: 20px;
+  }
 }
 
 /*--------------------------------------------------------------
